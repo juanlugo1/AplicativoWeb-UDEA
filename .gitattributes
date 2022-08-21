@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
-* text=auto j
+* text=auto
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
