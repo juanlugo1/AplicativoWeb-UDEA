@@ -1,5 +1,7 @@
 package proyectobassicprogrammers.modelo;
 
+import java.util.Date;
+
 import javax.persistence.*;
 @Entity
 @Table(name="empleado")
@@ -24,6 +26,10 @@ public class Empleado {
     @JoinColumn(name="idperfil",referencedColumnName = "id")
     private Perfil perfil;
     
+    @Column(name="crearat")
+    private Date empleadoCrearAt;
+    @Column(name="actualizarat")
+    private Date empleadoAtactualizarAt;
 
 
 }

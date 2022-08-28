@@ -1,5 +1,7 @@
 package proyectobassicprogrammers.modelo;
 
+import java.util.Date;
+
 import javax.persistence.*;
 
 @Entity
@@ -14,17 +16,17 @@ public class Perfil {
     @Column(name="telefono")
     private String perfilTelefono;
     @Column(name="crearat")
-    private String crearAt;
+    private Date perfilCrearAt;
     @Column(name="actualizarat")
-    private String actualizarAt;
+    private Date perfilAtactualizarAt;
     
     
-    public Perfil(Long id, String perfilImagen, String perfilTelefono, String crearAt, String actualizarAt) {
+    public Perfil(Long id, String perfilImagen, String perfilTelefono, Date perfilCrearAt, Date perfilAtactualizarAt) {
         this.id = id;
         this.perfilImagen = perfilImagen;
         this.perfilTelefono = perfilTelefono;
-        this.crearAt = crearAt;
-        this.actualizarAt = actualizarAt;
+        this.perfilCrearAt = perfilCrearAt;
+        this.perfilAtactualizarAt = perfilAtactualizarAt;
     }
     public Long getId() {
         return id;
@@ -44,19 +46,20 @@ public class Perfil {
     public void setPerfilTelefono(String perfilTelefono) {
         this.perfilTelefono = perfilTelefono;
     }
-    public String getCrearAt() {
-        return crearAt;
+    public Date getPerfilCrearAt() {
+        return perfilCrearAt;
     }
-    public void setCrearAt(String crearAt) {
-        this.crearAt = crearAt;
+    public void setPerfilCrearAt(Date perfilCrearAt) {
+        this.perfilCrearAt = perfilCrearAt;
     }
-    public String getActualizarAt() {
-        return actualizarAt;
+    public Date getPerfilAtactualizarAt() {
+        return perfilAtactualizarAt;
     }
-    public void setActualizarAt(String actualizarAt) {
-        this.actualizarAt = actualizarAt;
+    public void setPerfilAtactualizarAt(Date perfilAtactualizarAt) {
+        this.perfilAtactualizarAt = perfilAtactualizarAt;
     }
-
-
+    
+    
+   
 
 }
