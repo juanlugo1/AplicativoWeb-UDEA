@@ -31,5 +31,9 @@ public class Empleado {
     @Column(name="actualizarat")
     private Date empleadoAtactualizarAt;
 
+    //@OneToOne
+    //@JoinColumn(name="idempresa",referencedColumnName = "id")
+    //private Empresa empresa;
+
 
 }
